@@ -1,0 +1,54 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { action } from '@storybook/addon-actions';
+import {
+  PrimaryButton,
+  SecondaryButton,
+  TertiaryButton,
+} from "./Buttons";
+
+<Meta title="Foundation|Style Guide" component={Colours} />
+
+# Buttons
+
+Buttons are used to trigger actions within an application.
+
+## Usage
+
+Buttons are used to trigger internal actions within your web applications.
+
+## Colors
+
+Colors buttons are used as a call to action and indicate the most important action on a page.
+
+<Preview withToolbar>
+  <Story name="Colors">
+    <Colours onClick={action('button-click')} disabled={boolean("Disabled", false)}>Hello world</Colours>
+  </Story>
+</Preview>
+
+## Grid
+
+Primary buttons are used as a call to action and indicate the most important action on a page.
+
+<Story name="Grid">
+  <SecondaryButton disabled={boolean("Disabled", false)}>Hello world</SecondaryButton>
+</Story>
+
+## Typography
+
+Primary buttons are used as a call to action and indicate the most important action on a page.
+
+<Story name="Typography">
+  <TertiaryButton disabled={boolean("Disabled", false)}>Hello world</TertiaryButton>
+</Story>
+
+## Iconography
+
+Primary buttons are used as a call to action and indicate the most important action on a page.
+
+<Story name="Iconography">
+  <TertiaryButton disabled={boolean("Disabled", false)}>Hello world</TertiaryButton>
+</Story>
+
+

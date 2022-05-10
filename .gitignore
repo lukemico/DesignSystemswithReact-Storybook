@@ -10,6 +10,10 @@
 
 # production
 /build
+/storybook-static/*
+/storybook-static/b_dll/*
+/storybook-static/sb_dll/storybook_ui_dll.js
+/storybook-static/sb_dll/storybook_ui-manifest.json
 
 # misc
 .DS_Store

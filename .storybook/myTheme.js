@@ -1,9 +1,10 @@
 import { create } from "@storybook/theming/create";
+import logo from '/Users/lukem/Documents/Luke/FRONTEND MASTERS/DesignSystemswithReact-Storybook/src/assets/images/soh-logo.svg';
 
 export default create({
   base: "light",
 
-  colorPrimary: "hotpink",
+  colorPrimary: "black",
   colorSecondary: "deepskyblue",
 
   // UI
@@ -23,7 +24,7 @@ export default create({
   // Toolbar default and active colors
   barTextColor: "silver",
   barSelectedColor: "black",
-  barBg: "hotpink",
+  barBg: "black",
 
   // Form colors
   inputBg: "white",
@@ -31,7 +32,9 @@ export default create({
   inputTextColor: "black",
   inputBorderRadius: 4,
 
-  brandTitle: "My custom storybook",
-  brandUrl: "https://example.com",
-  brandImage: "https://placehold.it/350x150"
+  brandTitle: "Sydney Opera House",
+  brandUrl: "https://www.sydneyoperahouse.com/",
+  brandImage: logo
 });
+
+

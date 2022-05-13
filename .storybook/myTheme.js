@@ -1,5 +1,5 @@
 import { create } from "@storybook/theming/create";
-import logo from '/Users/lukem/Documents/Luke/FRONTEND MASTERS/DesignSystemswithReact-Storybook/src/assets/images/soh-logo.svg';
+import logo from '../src/assets/images/soh-logo.svg';
 
 export default create({
   base: "light",

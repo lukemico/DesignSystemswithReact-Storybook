@@ -1,18 +1,18 @@
-import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
-import { withKnobs, boolean } from "@storybook/addon-knobs";
-import { action } from '@storybook/addon-actions';
-import {
-  PrimaryButton,
-  SecondaryButton,
-  TertiaryButton,
-} from "./Buttons";
 import { palette } from './palette';
 
-<Meta title="Foundation|Style Guide"  />
+import {typographyExample1, typographyExample2} from "./assets";
 
-# Placeholder
+<Meta
+	title="Foundation|Style Guide/Typography"
+/>
 
-Buttons are used to trigger actions within an application.
+# Typography
+
+Typography are used to so we need to crystallize a plan for you gotta smoke test your hypothesis my capacity is full within an application.
+
+## Usage
+
+Typography are used to trigger internal actions within your web applications.
 
 <!--- Component documentation -->
 
@@ -39,13 +39,7 @@ Therefore the text should be readable and help the user understand what’s impo
   "Don't use two different sizes of text in the same line."
 ]}/>
 
-## Primary Buttons
-
-Primary buttons are used as a call to action and indicate the most important action on a page.
-
-<Preview withToolbar>
-  <Story name="Placeholder">
-    <PrimaryButton onClick={action('button-click')} disabled={boolean("Disabled", false)}>Hello world</PrimaryButton>
-  </Story>
-</Preview>
-
+<Tip title="What font to use?">
+  We are using Roboto from Google Fonts as default for our design system.
+  Click <Link size={Link.sizes} href="https://fonts.google.com/specimen/Roboto" withoutSpacing>here</Link> to download.
+</Tip>

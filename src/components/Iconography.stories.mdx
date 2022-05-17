@@ -1,18 +1,12 @@
-import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
-import { withKnobs, boolean } from "@storybook/addon-knobs";
-import { action } from '@storybook/addon-actions';
-import {
-  PrimaryButton,
-  SecondaryButton,
-  TertiaryButton,
-} from "./Buttons";
 import { palette } from './palette';
 
-<Meta title="Foundation|Style Guide"  />
+<Meta
+	title="Foundation|Style Guide/Icongraphy"
+/>
 
-# Placeholder
+# Iconography
 
-Buttons are used to trigger actions within an application.
+Iconography is used to to Ppersonal development synergize productive mindfulness what within an application.
 
 <!--- Component documentation -->
 
@@ -38,14 +32,3 @@ Therefore the text should be readable and help the user understand what’s impo
   <>Don’t underline words, use bold text.</>,
   "Don't use two different sizes of text in the same line."
 ]}/>
-
-## Primary Buttons
-
-Primary buttons are used as a call to action and indicate the most important action on a page.
-
-<Preview withToolbar>
-  <Story name="Placeholder">
-    <PrimaryButton onClick={action('button-click')} disabled={boolean("Disabled", false)}>Hello world</PrimaryButton>
-  </Story>
-</Preview>
-

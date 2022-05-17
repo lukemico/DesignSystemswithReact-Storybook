@@ -1,0 +1,90 @@
+import { palette } from './palette';
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { action } from '@storybook/addon-actions';
+
+
+<Meta
+	title="Foundation|Style Guide/Palette"
+/>
+
+# Colour palette
+
+The colour palette is organised by type e.g. `Primary`, or `Secondary`.
+
+<!--- Component documentation -->
+
+<ComponentName withFoundationBackground>
+  Color Palette Image
+</ComponentName>
+
+- [Overview](#overview)
+- [Text styles](#text-styles)
+- [Text colors](#text-colors)
+- [Usage and examples](#usage-and-examples)
+- [Feedback](#feedback)
+
+## Overview
+Like in other ui in mondays interface, typography works by principle of accessibility before aesthetics.
+Therefore the text should be readable and help the user understand what’s important by well contrasted size and colors hierarchy.
+
+## Colours by category
+
+<div className="columns">
+	<div className="tokens__list">
+		<ul>
+			{Object.keys(palette).map((colourCategory, idx) => {
+				const colours = Object.keys(palette[colourCategory]).map(
+					(colour, idx) => {
+						return (
+							<div className="tokens__list__row" key={idx}>
+								<div className="tokens__list__value">
+									<div
+										className="tokens__list__value__swatch"
+										style={{
+											backgroundColor:
+												palette[colourCategory][colour],
+										}}
+									/>
+								</div>
+								<span>
+									<pre>{`palette.${colourCategory}[${colour}]`}</pre>
+								</span>
+							</div>
+						);
+					},
+				);
+				const openFirst = idx === 0;
+				return (
+					<li className="tokens__list__dropdown" key={idx}>
+						<details open={openFirst}>
+							<summary className="tokens__list__category">
+								{colourCategory}
+							</summary>
+							<div>{colours}</div>
+						</details>
+					</li>
+				);
+			})}
+		</ul>
+	</div>
+</div>
+
+## Text styles
+<TextStyles />
+
+## Text colors
+<TextColors />
+
+## Usage and examples
+<UsageGuidelines guidelines={[
+  "Use fonts bigger than 14 pixel only.",
+  <>Don’t underline words, use bold text.</>,
+  "Don't use two different sizes of text in the same line."
+]}/>
+
+
+## Example
+
+```
+Place example code snippets here
+```
